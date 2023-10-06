@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Pueblos Magicos</title>
+    <link rel="stylesheet" href="crusStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <center><H1>Pueblos Mágicos de Oaxaca</H1></center>
+        <fieldset>
+            <legend>Agregar</legend>
+            <form id="pueblo-form" action="">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="nombre" placeholder="Nombre del pueblo" pattern="[^0-9]*"
+                            title="Por favor, solo ingrese caracteres de texto." required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="descripcion">Descripcion</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="descripcion" cols="60" rows="4" 
+                        placeholder="Escriba aqui la descripción del pueblo mágico" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="transporte">Transporte</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="transporte" cols="60" rows="4"  required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="URL">URL imagen</label>
+                    </div>
+                    <div class="col-75">
+                        <input name="url" id="URL" required type="url" placeholder="Escriba el link de drive de la imagen a mostrar">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="region">Región</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="region">
+                            <option value="1">Costa</option>
+                            <option value="2">Cañada</option>
+                            <option value="3">Istmo</option>
+                            <option value="4">Valles Centrales</option>
+                            <option value="5">Sierra sur</option>
+                            <option value="6">Sierra Norte</option>
+                            <option value="7">Papaloapan</option>
+                            <option value="8">La Mixteca</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="act">Nombre Actividad</label>
+                    </div>
+                    <div class="col-75">
+                        <input  id="act" required type="text" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="descAct">Descripcion Actividad</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="descAct" cols="60" rows="4" 
+                        placeholder="Escriba aqui la descripción de la actividad" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="aloj">Nombre Alojamiento</label>
+                    </div>
+                    <div class="col-75">
+                        <input  id="aloj" required type="text" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="descAloj">Descripcion Alojamiento</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="descAloj" cols="60" rows="4" 
+                        placeholder="Escriba aqui la descripción del alojamiento" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="res">Nombre Restaurante</label>
+                    </div>
+                    <div class="col-75">
+                        <input  id="res" required type="text" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="descRes">Descripcion Restaurante</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="descRes" cols="60" rows="4" 
+                        placeholder="Escriba aqui la descripción del restautante" required></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25"></div>
+                    <div class="colBtn">
+                        <input type="submit" name="Enviar">
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Editar o Eliminar</legend>
+            <center>
+                <table id="pueblos-table" border="1px">
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Region</th>
+                        <th></th>
+                    </tr>
+                </table>
+            </center>
+        </fieldset>
+    </div>
+
+    <script src="crudNv.js"></script>
+</body>
+</html>
