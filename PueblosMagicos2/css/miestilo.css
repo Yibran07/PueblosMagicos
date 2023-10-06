@@ -1,0 +1,162 @@
+/* Estilos generales */
+
+/* Configuración básica para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0; /* Elimina el margen predeterminado */
+    background-color: #000000; /* Fondo negro */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #000000; /* Fondo negro */
+    color: rgb(255, 255, 255); /* Texto blanco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    transition: background-color 0.3s ease-in-out; /* Agregamos una transición para suavizar el cambio de color de fondo */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 800px; /* Margen derecho grande (ajusta según necesites) */
+}
+
+.nav-links li a {
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Transición de color al pasar el cursor */
+}
+
+.nav-links li a:hover {
+    color: #ffffff; /* Color de texto al pasar el cursor (repetido, puedes ajustar si lo deseas) */
+}
+
+/* Estilos para el menú de navegación fijo */
+.navbar.fixed {
+    position: fixed; /* Barra de navegación fija en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Coloca la barra por encima de otros elementos */
+    padding: 0.5rem 0; /* Reduce el espacio superior e inferior para hacerlo más compacto */
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #000000; /* Fondo negro */
+    color: white; /* Texto blanco */
+    text-align: center;
+    padding: 1rem;
+    /* Quita la propiedad height: 50px; para permitir que el contenido se expanda naturalmente */
+}
+
+/* Estilos para el contenido principal */
+.adentro {
+    /* Ajusta la altura según sea necesario o utiliza min-height para mayor flexibilidad */
+    min-height: 1200px;
+    background-color: #070707; /* Fondo oscuro */
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para las tarjetas */
+.texto-izquierda {
+    margin-top: 65px;
+    float: left;
+    width: 65%;
+    padding: 40px; /* Agrega espaciado alrededor del texto */
+    color: #ffffff; /* Texto blanco */
+    font-size: 20px;
+    line-height: 2; /* Ajusta el espaciado entre líneas según tu preferencia */
+    text-align: justify;
+}
+
+.imagenes-derecha {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.imagenes-derecha img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para el contenedor de tarjetas */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilos para cada tarjeta */
+.tarjeta {
+    width: 260px;
+    height: 360px; /* Aumenta la altura para acomodar la imagen y el texto */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 90px; /* Margen grande (ajusta según necesites) */
+    text-align: center;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+}
+
+.tarjeta p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Estilos para un elemento específico con clase "targetitas" */
+.targetitas {
+    background-color: #070707; /* Fondo oscuro */
+}
+
+
+#error-card {
+    background-color: #ffffff; /* Color de fondo rojo */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Alineación de texto al centro */
+    padding: 20px; /* Espacio interno */
+    font-size: 18px; /* Tamaño de fuente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Estilos para la imagen de "Sin conexión a Internet" */
+#error-image {
+    width: 150px; /* Ancho de la imagen */
+    height: auto; /* Altura automática */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+#error-message p {
+    margin: 10px 0; /* Margen superior e inferior del párrafo */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color de texto negro */
+}

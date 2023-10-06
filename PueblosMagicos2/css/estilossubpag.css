@@ -1,0 +1,125 @@
+.navbar {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 800px;
+
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #ffffff;
+}
+
+
+#imagenPresentacion {
+    width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#txtPrincipal {
+    color: white;
+    text-align: center;
+}
+
+#mapa {
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#error-card {
+    background-color: #000000;
+    /* Color de fondo rojo */
+    color: rgb(0, 0, 0);
+    /* Color de texto blanco */
+    text-align: center;
+    /* Alineación de texto al centro */
+    padding: 20px;
+    /* Espacio interno */
+    font-size: 18px;
+    /* Tamaño de fuente */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+}
+
+/* Estilos para la imagen de "Sin conexión a Internet" */
+#error-image {
+    width: 150px;
+    /* Ancho de la imagen */
+    height: auto;
+    /* Altura automática */
+    margin-bottom: 10px;
+    /* Margen inferior */
+}
+
+#error-message p {
+    margin: 10px 0;
+    /* Margen superior e inferior del párrafo */
+    font-weight: bold;
+    /* Texto en negrita */
+    color: rgb(255, 255, 255);
+    /* Color de texto negro */
+}
+
+ 
+.tarjeta {
+    display: flex;
+    background-color: #333;
+    color: white;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Estilos para la imagen */
+.tarjeta img {
+    max-width: 300px; /* Ajusta el ancho de la imagen según tu preferencia */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+/* Estilos para el contenedor de contenido (texto) */
+.tarjeta .contenido {
+    flex: 1; /* Permite que el contenido ocupe el espacio restante */
+}
+
+.btnP{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: solid 2px rgb(0, 255, 229);
+    background-color: transparent;
+    color: rgb(0, 255, 229);
+    cursor: pointer;
+}
+
+.btnP:hover{
+    background-color: aqua;
+    color: black;
+}
